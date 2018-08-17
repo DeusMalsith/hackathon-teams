@@ -1,0 +1,15 @@
+<h1>Edit Team</h1>
+
+<form id="edit-form" action='/teams/<%= index%>'>
+	<div class="form-group">
+		<label for="title" class="hidden">Title</label>
+		<input type="text" name="title" class="form-control" id="title" placeholder="Title">
+	</div>
+
+	<div class="form-group">
+		<label for="body" class="hidden">Body</label>
+		<textarea type="text" class="form-control" id="body" placeholder="Body" name="body"><%= team.members%></textarea>
+	</div>
+
+	<button type="submit" class="btn btn-primary">Submit</button>
+</form>

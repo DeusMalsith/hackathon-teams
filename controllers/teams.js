@@ -25,4 +25,8 @@ router.get('/:name', function(req, res) {
   res.render('teams/show', { team: team });
 });
 
+router.put('/teams/:name', function(req, res) {
+	var edit = teamService.editTeam();
+});
+
 module.exports = router;
